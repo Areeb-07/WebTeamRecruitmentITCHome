@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  background: #01264a;
+}
+
+.navbar .logo {
+  width: 100px;
+  margin: 1em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.navbar button {
+  background: #20272E;
+  border: none;
+  font-size: 1.3em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  background-image: url("../images/background1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome .first-head {
+  font-weight: bold;
+  color: white;
+  font-size: 2.5em;
+  padding-top: 120px;
+}
+
+.welcome .second-head {
+  color: #00f359;
+  font-size: 2.5em;
+}
+
+.welcome .sub-head {
+  color: white;
+  padding-bottom: 180px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  background-image: url("../images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-logo {
+  width: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 50px;
+}
+
+.about-content .about-head {
+  color: #00f359;
+  font-size: 2.5em;
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+
+.about-content .about-link {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.about-content .about-para {
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.join {
+  text-align: center;
+  background-image: url("../images/background3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.structure {
+  width: 400px;
+}
+
+.how .how-head {
+  color: #00f359;
+  font-size: 2.5em;
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+
+.how .how-para {
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.copy {
+  color: white;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul.navbar-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: 1.2em;
+    padding: .5em .6em;
+  }
+  .navbar nav ul.navbar-contents {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav button {
+    background: #01264a;
+    border: none;
+    font-size: 1.3em;
+    margin-top: .1em;
+  }
+  .navbar nav a.dropdown-item {
+    color: black;
+  }
+  .about .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section.about {
+    padding: 10em 4em;
+  }
+  .about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .about .container .about-content {
+    margin: 3em 3em 0 5em;
+  }
+  .about .container .about-content h1 {
+    font-size: 3.5em;
+    width: 90%;
+  }
+  .sub .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section.sub {
+    padding: 5em 2em 1em 2em;
+  }
+  .sub .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .sub .container .how {
+    margin: 1em 1em 0 5em;
+  }
+  .sub .container .how h1 {
+    font-size: 3.5em;
+    width: 90%;
+  }
+  section.join {
+    padding: 1em none none 1em;
+  }
+  .structure {
+    width: 500px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 12em;
+  }
+  .welcome .first-head {
+    font-size: 3.5em;
+  }
+  .welcome .second-head {
+    font-size: 3.5em;
+  }
+  .about .about-head {
+    font-size: 3.5em;
+  }
+  .how .how-head {
+    font-size: 3.5em;
+  }
+  .copy {
+    margin: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
